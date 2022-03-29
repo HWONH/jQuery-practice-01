@@ -24,3 +24,23 @@
 
 .test_26 .img_frame{font-size: 0;}
 .test_26 img{width: 200px;}
+
+/* 실습문제02 */
+#ex_04{display: block;margin-bottom: 10px;width: 300px;}
+
+#ex_06{display: block;margin-top: 10px;width: 300px;}
+
+p.active{background-color: #ffaaff;}
+
+#ex_11{height: 50px;font-size: 0;text-align: center;background: #cccccc;}
+#ex_11 > li{position: relative;display: inline-block;vertical-align: top;}
+#ex_11 > li > a{display: block;padding: 0 30px;line-height: 50px;font-size: 16px;font-weight: bold;color: #333333;transition: color 0.5s;}
+#ex_11 > li.active > a{color: #ff0000;}
+#ex_11 > li > ul{display: none;position: absolute;width: 100%;background: #cccccc;z-index: 1;}
+#ex_11 > li > ul > li{line-height: 30px;font-size: 14px;color: #555555;}
+
+.slider{position: relative;height: 400px;overflow: hidden;}
+.slider li{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;z-index: 0;}
+.slider li img{width: 100%;}
+.slide_num{text-align: center;}
+.slide_num li{display: inline-block;width: 12px;height: 12px;margin: 0 10px;background: #999999;border-radius: 6px;text-indent: -9999px;cursor: pointer;}

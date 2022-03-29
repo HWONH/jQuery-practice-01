@@ -142,4 +142,41 @@ $(document).ready(function(){
         $(".test_26 img:eq(3)").fadeIn(3000);
         $(".test_26 img:eq(4)").fadeIn(4000);
     });
+
+    /* 실습문제02 */
+    $("#txt_ch").css({"color":"#ff0000","font-size":"20px"});
+
+    var $icecream=$("#txt_03").text();
+    console.log($icecream);
+    $("#txt_sel span").text($icecream);
+
+    $("#ex_03").append("<p id='vo_05'>스페인</p>");
+    $("#ex_03 p").last().css("color","#ff0000");
+
+    $("#ex_04").attr("src","img/drama.jpg");
+
+    $("#ex_05").attr("src","img/image_02.jpg");
+
+    $("#ex_06").attr("src","img/drama2.png").animate({"margin-left":"200px"},2000);
+
+    $("#ex_07 .num_03").addClass("active");
+
+    $("#ex_08 .pd_04").hide();
+
+    var $l_child=$("#ex_09 p").last();
+    $("#ex_09 .ho_01").before($l_child);
+
+    var $value=$("#ex_10 .lo_03").val();
+    console.log($value);
+    $("#ex_10 .lo_03").val("대전");
+
+    $("#ex_11 > li").hover(function(){
+        $(this).addClass("active");
+        $(this).find("ul").stop().slideDown();
+        return false;
+    }, function(){
+        $(this).removeClass("active");
+        $(this).find("ul").stop().slideUp();
+        return false;
+    });
 });
